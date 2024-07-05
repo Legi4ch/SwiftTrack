@@ -1,0 +1,31 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+pre {
+    background-color: antiquewhite;
+    padding: 1.5em;
+    border-radius: 20px;
+}
+
+.method{
+    color: #b96600;
+    font-family: monospace;
+    font-weight: bold;
+}
+.type {
+    color: #c1c0c0;
+    font-family: monospace;
+    font-weight: bold;
+}
