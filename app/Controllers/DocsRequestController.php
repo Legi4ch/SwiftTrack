@@ -12,7 +12,7 @@ class DocsRequestController extends BaseController
 
     public function init(Request $request): void {
         $tmplVars = [
-            "title" => "SwiftTrack. Документация. Request.",
+            "title" => "Swift Track. Документация. Request.",
             "welcome" => "Класс Request",
             "root" => Config::HOST // {{root}} variable define site root for each template if you need.
         ];

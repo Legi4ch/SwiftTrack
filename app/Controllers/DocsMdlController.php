@@ -12,8 +12,8 @@ class DocsMdlController extends BaseController
 
     public function init(Request $request): void {
         $tmplVars = [
-            "title" => "SwiftTrack. Документация. Middleware.",
-            "welcome" => "Middleware в SwiftTrack",
+            "title" => "Swift Track. Документация. Middleware.",
+            "welcome" => "Middleware в Swift Track",
             "root" => Config::HOST, // {{root}} variable define site root for each template if you need.
         ];
 

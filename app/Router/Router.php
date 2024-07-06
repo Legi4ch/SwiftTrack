@@ -40,15 +40,24 @@ class Router
         return $pipeline($request);
     }
 
+    private function handleError(int $statusCode, string $message): void {
+        error_log($message);
+        ErrorsController::handleError($statusCode, $message);
+    }
+
     public function handle(Request $request): void {
         $uri = parse_url($request->getUri(), PHP_URL_PATH);
         $method = $request->getMethod();
 
         foreach ($this->routes as $route) {
+            if (!class_exists($route->getController())) {
+                $this->handleError(500, "Controller class not found: " . $route->getController());
+                return;
+            }
             if ($this->matchRoute($route, $uri)) {
                 if ($route->getMethod() != $method) {
-                    ErrorsController::handleError(405, "");
-                    exit();
+                    $this->handleError(405, "");
+                    return;
                 }
                 // Обработка Middleware перед вызовом контроллера
                 $this->runMiddlewares($request, $route->getMiddlewares(), function(Request $request) use ($route) {
@@ -56,15 +65,14 @@ class Router
                         $controller = $this->initController($route->getController());
                         $controller->init($request);
                     } catch (ReflectionException $e) {
-                        error_log("Router initiation error: " . $e->getMessage());
-                        ErrorsController::handleError(500, "Router initiation error: " . $e->getMessage());
-                        exit();
+                        $this->handleError(500, "Router initiation error: " . $e->getMessage());
+                        return;
                     }
                 });
                 return;
             }
         }
-        ErrorsController::handleError(404, Config::HOST . $request->getUri());
+        $this->handleError(404, Config::HOST . $request->getUri());
     }
 
     public function loadRoutes(string $directory): void

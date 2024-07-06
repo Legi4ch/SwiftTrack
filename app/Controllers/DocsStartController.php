@@ -12,8 +12,8 @@ class DocsStartController extends BaseController
 
     public function init(Request $request): void {
         $tmplVars = [
-            "title" => "SwiftTrack. Документация. Основные принципы.",
-            "welcome" => "Идеология SwiftTrack",
+            "title" => "Swift Track. Документация. Основные принципы.",
+            "welcome" => "Идеология Swift Track",
             "root" => Config::HOST // {{root}} variable define site root for each template if you need.
         ];
 

@@ -12,8 +12,8 @@ class DocsTmplController extends BaseController
 
     public function init(Request $request): void {
         $tmplVars = [
-            "title" => "SwiftTrack. Документация. Шаблоны.",
-            "welcome" => "Шаблоны в SwiftTrack",
+            "title" => "Swift Track. Документация. Шаблоны.",
+            "welcome" => "Шаблоны в Swift Track",
             "root" => Config::HOST, // {{root}} variable define site root for each template if you need.
         ];
 

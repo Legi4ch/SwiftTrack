@@ -12,8 +12,8 @@ class DocsRouterController extends BaseController
 
     public function init(Request $request): void {
         $tmplVars = [
-            "title" => "SwiftTrack. Документация. Маршруты.",
-            "welcome" => "Маршрутизация в SwiftTrack",
+            "title" => "Swift Track. Документация. Маршруты.",
+            "welcome" => "Маршрутизация в Swift Track",
             "root" => Config::HOST // {{root}} variable define site root for each template if you need.
         ];
         $this->loadTemplate($tmplVars);

@@ -6,7 +6,7 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">SwiftTrack</a>
+        <a id="logo-container" href="#" class="brand-logo">Swift Track</a>
     </div>
   </nav>
 
@@ -27,7 +27,7 @@
                   Имена шаблонов должны использовать Snake Case и называться по правилу: <span class="type"><i>template</i>-tmpl.php</span>
               </p>
               <p class="blue-grey-text">
-                  Разрабатывая SwiftTrack мы не стали делать в нем специальный отдельный шаблонизатор для html страниц.
+                  Разрабатывая Swift Track мы не стали делать в нем специальный отдельный шаблонизатор для html страниц.
                   Но это не значит, что мы совсем ничего не предусмотрели! Мы уже чуть-чуть касались шаблонов в предыдущих разделах.
                   И как было сказано, в шаблонах Вам доступны переменные, которые могут быть определены в контроллерах. <br/><br/>
 <pre>
@@ -36,7 +36,7 @@ class HomeController extends BaseController
     protected string $template = "home";
 
         $tmplVars = [
-            "page-title" => "SwiftTrack Demo starter page",
+            "page-title" => "Swift Track Demo starter page",
             "welcome-msg" => "Starter Page",
             "show" => true,
             "varsAr" => ["zero", "one", "two"]
@@ -78,7 +78,7 @@ class HomeController extends BaseController
               <h4 class="header light-blue-text lighten-1">Пример более сложного шаблона.</h4>
               <p class="blue-grey-text">
                   Описанная выше структура массива переменных очень простая. Часто бывает необходимо что-то более сложное и больше переменных.
-                  Посмотрим, как это делается в SwiftTrack.
+                  Посмотрим, как это делается в Swift Track.
 
 <pre>
 class HomeController extends BaseController
@@ -112,12 +112,12 @@ class HomeController extends BaseController
               Это удобно для включения в шаблоны html кода, который всегда статичен: шапки страниц, нижние блоки и т.д.
           </p>
           <p class="blue-grey-text">
-              Как Вы смогли убедиться, SwiftTrack вовсе не оставляет Вас с голыми руками при работе с html шаблонами. Фреймворк обеспечивает достаточную
+              Как Вы смогли убедиться, Swift Track вовсе не оставляет Вас с голыми руками при работе с html шаблонами. Фреймворк обеспечивает достаточную
               для небольших и средних проектов гибкость шаблонизации, не перегружая разработчика изучением лишних деталей и синтаксиса.
           </p>
           <p class="blue-grey-text">
               Это последний раздел нашей документации. Мы постарались изложить все максимально кратко, но в то же время в объеме достаточном для старта.
-              Надеемся, что Вам понравится работать с SwiftTrack!
+              Надеемся, что Вам понравится работать с Swift Track!
           </p>
           </div>
       </div>

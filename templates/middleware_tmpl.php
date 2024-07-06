@@ -6,7 +6,7 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">SwiftTrack</a>
+        <a id="logo-container" href="#" class="brand-logo">Swift Track</a>
     </div>
   </nav>
 
@@ -26,7 +26,7 @@
                   который находится между двумя или более слоями программного обеспечения и обрабатывает входящие и исходящие запросы или данные.
               </p>
               <p class="blue-grey-text">
-                  В SwiftTrack Вы можете создавать свои классы Middleware имплементируя интерфейс
+                  В Swift Track Вы можете создавать свои классы Middleware имплементируя интерфейс
                   <span class="method">App\Middleware\MiddlewareInterface</span>,<br/> который реализует
                   метод - <span class="method">handle(Request $request, callable $next)</span>. <br/><br/>
               </p>

@@ -16,8 +16,8 @@ class DocsDbController extends BaseController
         $fb = new FreeBuilder(SqliteConnection::class);
         $data = $fb->getAll();
         $tmplVars = [
-            "title" => "SwiftTrack. Документация. База данных.",
-            "welcome" => "Базы данных в SwiftTrack",
+            "title" => "Swift Track. Документация. База данных.",
+            "welcome" => "Базы данных в Swift Track",
             "data" => $data,
             "root" => Config::HOST, // {{root}} variable define site root for each template if you need.
         ];

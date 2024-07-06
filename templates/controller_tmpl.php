@@ -6,7 +6,7 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">SwiftTrack</a>
+        <a id="logo-container" href="#" class="brand-logo">Swift Track</a>
     </div>
   </nav>
 
@@ -28,7 +28,7 @@
       <div class="row">
           <p class="col l12">
               <p class="blue-grey-text">
-                  Контроллеры - это важная часть SwiftTrack. Почти всю основную работу выполняют они и разрабатывая Ваш продукт на SwiftTrack, Вы
+                  Контроллеры - это важная часть Swift Track. Почти всю основную работу выполняют они и разрабатывая Ваш продукт на SwiftTrack, Вы
                   будете взаимодействовать в основном именно с ними.
               </p>
               <p class="blue-grey-text">
@@ -81,7 +81,7 @@ class HomeController extends BaseController
               </p>
               <p class="blue-grey-text">
               <blockquote>
-                  Разрабатывая SwiftTrack мы не стали решать за Вас, что именно будут отдавать контроллеры.<br/> Вы всегда можете реализовать необходимые
+                  Разрабатывая Swift Track мы не стали решать за Вас, что именно будут отдавать контроллеры.<br/> Вы всегда можете реализовать необходимые
                   методы добавив их к Вашим наследникам абстрактного класса <span class="method">App/BaseController</span>.
                   </blockquote>
               </p>

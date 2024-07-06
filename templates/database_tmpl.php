@@ -6,7 +6,7 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">SwiftTrack</a>
+        <a id="logo-container" href="#" class="brand-logo">Swift Track</a>
     </div>
   </nav>
 
@@ -24,14 +24,14 @@
               <p class="blue-grey-text">
               </p>
               <p class="blue-grey-text">
-                  SwiftTrack не предоставляет полноценной ORM. Для нашего микрофреймворка это избыточно.<br/>
+                  Swift Track не предоставляет полноценной ORM. Для нашего микрофреймворка это избыточно.<br/>
                   Для работы с базами данных фреймворк использует простые модели данных и два класса для запросов к базе.
               </p>
           <p class="blue-grey-text">
               <b>Подключение</b><br/>
               За подключение отвечают классы:  <span class="method">App\Database\SqliteConnection</span> и
               <span class="method">App\Database\MysqlConnection</span><br/>
-              В стандартной поставке SwiftTrack умеет работать с Sqlite и MySql базами.
+              В стандартной поставке Swift Track умеет работать с Sqlite и MySql базами.
           </p>
           <p class="blue-grey-text">
               <b>Модели</b><br/>

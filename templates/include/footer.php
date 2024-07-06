@@ -4,13 +4,13 @@
             <div class="col l6 s12">
                 <h5 class="white-text">SwiftTrack</h5>
                 <p class="grey-text text-lighten-4">
-                    Представляем SwiftTrack - PHP микрофреймворк, который выделяется на фоне более массивных и
+                    Представляем Swift Track - PHP микрофреймворк, который выделяется на фоне более массивных и
                     сложных фреймворков благодаря своему упору на минимальные требования к настройке сервера и легкость освоения.
                     SwiftTrack разработан так, чтобы позволить вам приступить к работе над проектом в кратчайшие сроки,
                     не теряя времени на длительное изучение его основ или сложные конфигурации.
                 </p>
                 <p class="grey-text text-lighten-4">
-                    <a href="" class="header white-text" target="_blank"><h5>SwiftTrack на Гитхабе</h5></a>
+                    <a href="https://github.com/Legi4ch/SwiftTrack" class="header white-text" target="_blank"><h5>Swift Track на Гитхабе</h5></a>
                 </p>
 
 
@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="col l3 s12">
-                <h5 class="white-text">Сделано на SwiftTrack</h5>
+                <h5 class="white-text">Сделано на Swift Track</h5>
                 <ul>
                     <li><a class="white-text" href="https://formhub.dev" target="_blank">FormHub.dev</a></li>
                     <li><a class="white-text" href="https://lnkr.me" target="_blank">lnkr.me</a></li>

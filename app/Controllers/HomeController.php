@@ -12,7 +12,7 @@ class HomeController extends BaseController
 
     public function init(Request $request): void {
         $tmplVars = [
-            "title" => "SwiftTrack Demo starter page",
+            "title" => "Swift Track Demo starter page",
             "welcome" => "Starter Page",
             "root" => Config::HOST // {{root}} variable define site root for each template if you need.
         ];
