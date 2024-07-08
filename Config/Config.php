@@ -4,7 +4,7 @@ namespace Config;
 
 class Config
 {
-    const HOST ="http://localhost";
+    const HOST ="https://dapi.tjc.ru";
     const TEMPLATE_FOLDER = "templates/";
     const DEV_MODE = true; // false for production.
     const LOG_FOLDER = '/var/www/folder/php-logs/errors.log';

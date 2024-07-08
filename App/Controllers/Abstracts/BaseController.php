@@ -3,7 +3,7 @@
 namespace app\Controllers\Abstract;
 
 use App\Controllers\ErrorsController;
-use app\Controllers\Interfaces\ControllerInterface;
+use App\Controllers\Interfaces\ControllerInterface;
 use App\Request\Request;
 use Config\Config;
 
