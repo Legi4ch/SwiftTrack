@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use app\Controllers\Abstract\BaseController;
+use App\Controllers\Abstracts\BaseController;
 use App\Request\Request;
 use Config\Config;
 

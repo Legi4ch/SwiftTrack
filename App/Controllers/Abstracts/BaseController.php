@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Controllers\Abstract;
+namespace app\Controllers\Abstracts;
 
 use App\Controllers\ErrorsController;
 use App\Controllers\Interfaces\ControllerInterface;
@@ -28,7 +28,7 @@ abstract class BaseController implements ControllerInterface {
         }
     }
 
-    private function processTemplate($content, $variables): array|string|null {
+    private function processTemplate($content, $variables) {
         return preg_replace_callback('/\{\{([\w\-.\[\]]+)}}/', function($matches) use ($variables) {
             $key = $matches[1];
             $originalMarker = $matches[0]; // Исходный маркер, например {{variable}}

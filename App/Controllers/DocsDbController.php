@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use app\Controllers\Abstract\BaseController;
+use app\Controllers\Abstracts\BaseController;
 use App\Database\FreeBuilder;
 use App\Database\SqliteConnection;
 use App\Request\Request;

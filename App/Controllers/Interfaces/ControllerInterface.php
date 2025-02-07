@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Controllers\Interfaces;
+namespace App\Controllers\Interfaces;
 
 use App\Request\Request;
 

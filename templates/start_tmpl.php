@@ -89,7 +89,7 @@
               <br/><br/>
               <h6 class="header">Структура фреймворка</h6>
               <ul id="root">
-                  <li class="folder">app ↓
+                  <li class="folder">App ↓
                       <ul>
                           <li class="subfolder">
                               <ul>

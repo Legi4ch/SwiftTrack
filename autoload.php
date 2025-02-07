@@ -2,8 +2,8 @@
 
 use Config\PhpConfig;
 
-include_once("config/PhpConfig.php");
-include_once("config/Config.php");
+include_once("Config/PhpConfig.php");
+include_once("Config/Config.php");
 
 PhpConfig::configure();
 
@@ -14,3 +14,5 @@ spl_autoload_register(function ($class) {
         require $class;
     }
 });
+
+

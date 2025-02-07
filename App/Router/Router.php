@@ -48,6 +48,11 @@ class Router
     public function handle(Request $request): void {
         $uri = parse_url($request->getUri(), PHP_URL_PATH);
         $method = $request->getMethod();
+        if ($method == "OPTIONS") {
+            Config::setCorsHeaders();
+            http_response_code(204);
+            return;
+        }
 
         foreach ($this->routes as $route) {
             if (!class_exists($route->getController())) {

@@ -159,4 +159,15 @@ final class Request
         return $this->method;
     }
 
+    public function setAttribute(string $key, mixed $value): void
+    {
+        $this->requestKeys[$key] = $value;
+    }
+
+    public function getAttribute(string $key): mixed
+    {
+        return $this->requestKeys[$key] ?? null;
+    }
+
+
 }
